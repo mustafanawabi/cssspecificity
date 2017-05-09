@@ -1,0 +1,4 @@
+Selector Types
+1. Type selectors (e.g., h1) and pseudo-elements (e.g., :before).
+2. Class selectors (e.g., .example), attributes selectors (e.g., [type="radio"]) and pseudo-classes (e.g., :hover).
+3. ID selectors (e.g., #example).
