@@ -8,8 +8,67 @@
   </head>
 
   <body>
-    <h1>What is CSS Specificity?</h1>
-    <p id='para1' onclick='move(event)'>It's about winning. Or more specifically it's about who wins.</p>
+    <div id='section1'>
+      <h1>What is CSS Specificity?</h1>
+      <div class='text' onclick='move(event)'>
+        <p>It's about winning. In other words which
+          <u>
+            <i>
+              <strong>
+                <span>CSS rule has higher specificity (wins)</span>
+              </strong>
+            </i>
+          </u> and is applied to an element.
+        </p>
+      </div>
+    </div>
+
+    <div id='section2'>
+      <h1>Let's say you have the following html</h1>
+      <div class='text' onclick='move(event)'>
+        <code>
+         &lt;ul&gt;<br />
+         &nbsp;&nbsp;&lt;li&gt;TDD&lt;/li&gt;<br />
+         &nbsp;&nbsp;&lt;li&gt;BDD&lt;/li&gt;<br />
+         &nbsp;&nbsp;&lt;li class="selected"&gt;PDD&lt;/li&gt;<br />
+         &lt;/ul&gt;<br /><br />
+
+         <h3>What is the color of PDD based for the following CSS?</h3>
+          .selected {
+            color: red;
+          }
+          <br />
+          ul li {
+            color: black;
+          }
+        </code>
+      </div>
+    </div>
+
+    <div id='section3'>
+      <h1>How is it calculated?</h1>
+      <div class='text' onclick='move(event)'>
+        <p>It's a point system. Each selector is worth one of the following number of points:</p>
+        <ul>
+          <li>1 point for element selectors (h1) and pseudo-elements (::before)</li>
+          <li>10 points for class selectors (.selected), attribute selectors ([type="radio"]) and pseudo-classes (:hover)</li>
+          <li>100 points for id selectors (#selected)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id='section4'>
+      <h1>Special Cases!</h1>
+      <div class='text' onclick='move(event)'>
+        <ul>
+          <li>What if it's a tie or the same selector? Last one wins.</li>
+          <li>What about inline styles? They always win (1000 points).</li>
+          <li>What about !important? Actually !important always win.</li>
+          <li>What about the universal selector *? It never wins.</li>
+        </ul>
+      </div>
+    </div>
+
   </body>
 
   <script src='js/about.js'></script>

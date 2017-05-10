@@ -1,8 +1,27 @@
 /* example 1 */
-.headings {
+/*.selected {
+  color: pink;
+}
+
+ul li {
+  color: yellow;
+}*/
+
+
+/* example 2 */
+ /*main > details > ul li:first-child  {
+  color: pink;
+}
+
+.selected {
+  color: yellow;
+}*/
+
+/* example 3 */
+/*body > div > div > div > div > div > div > main > details > ul > li {
   color: yellow;
 }
 
-.headings {
-  color: green;
-}
+.selected {
+  color: pink;
+}*/

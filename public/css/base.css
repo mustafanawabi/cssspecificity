@@ -17,3 +17,11 @@ details {
   padding: 20px;
   color: white;
 }
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin: 10px;
+}
